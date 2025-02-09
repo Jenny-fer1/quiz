@@ -21,7 +21,7 @@ const quizData = [
     },
     {
       question: "How has the learnable experience been so far?",
-      options: ["I dey vex", "Learnable is beginner friendly (Tappi make I no catch you outside)", "The Lord is my strength", "It is well oo"],
+      options: ["I dey vex", "Learnable is beginner friendly (Tappi make I no catch you outside)", "The Lord is my strength", "It is"],
       correctAnswer: "Learnable is beginner friendly (Tappi make I no catch you outside)"
     }
   ];
@@ -54,15 +54,16 @@ const quizData = [
     nextButton.disabled = true;
   }
   
+  
   function handleAnswer(selectedOption) {
     const buttons = optionsContainer.querySelectorAll('button');
     buttons.forEach(button => {
       button.disabled = true;
-      // Mark correct answer
+
       if (button.textContent === quizData[currentQuestionIndex].correctAnswer) {
         button.classList.add('correct');
       }
-      // Mark wrong selection
+
       if (button.textContent === selectedOption && 
           selectedOption !== quizData[currentQuestionIndex].correctAnswer) {
         button.classList.add('wrong');
@@ -90,6 +91,7 @@ const quizData = [
     }
   });
   
+
   restartButton.addEventListener('click', () => {
     currentQuestionIndex = 0;
     score = 0;
@@ -97,6 +99,4 @@ const quizData = [
     resultsContainer.style.display = 'none';
     loadQuestion();
   });
-  
-  // Initialize quiz
   loadQuestion();

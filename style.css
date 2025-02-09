@@ -9,7 +9,7 @@ body {
   }
   
   .container {
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     margin: 20px;
   }
@@ -55,9 +55,9 @@ body {
     border-radius: 10px;
     background: #f8f9fa;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: medium;
     text-align: left;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
   
   #options-container button:hover {
@@ -66,15 +66,15 @@ body {
   }
   
   #options-container button.correct {
-    background: #d4edda !important;
-    border-color: #c3e6cb !important;
-    color: #155724 !important;
+    background: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
   }
   
   #options-container button.wrong {
-    background: #f8d7da !important;
-    border-color: #f5c6cb !important;
-    color: #721c24 !important;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24 ;
   }
   
   #next-button {
@@ -85,9 +85,9 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: medium;
     font-weight: 600;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
   
   #next-button:hover {
@@ -98,7 +98,6 @@ body {
   #next-button:disabled {
     background: #6c757d;
     cursor: not-allowed;
-    transform: none;
   }
   
   #score-text {
@@ -114,9 +113,9 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: medium;
     font-weight: 600;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
   
   #restart-button:hover {
